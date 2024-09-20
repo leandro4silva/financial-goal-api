@@ -5,29 +5,28 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ADA63B76-AE85-4107-BAC9-3AFBE1B1C3E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinTrack.Api", "src\FinTrack.Api\FinTrack.Api.csproj", "{C5B75AD6-ABD4-4A3B-9B6C-F0343F29A3BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinTrack.Api", "src\FinTrack.Api\FinTrack.Api.csproj", "{C5B75AD6-ABD4-4A3B-9B6C-F0343F29A3BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinTrack.Application", "src\FinTrack.Application\FinTrack.Application.csproj", "{B0FCD464-2A1F-479F-B8DA-CD191D4D7AFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinTrack.Application", "src\FinTrack.Application\FinTrack.Application.csproj", "{B0FCD464-2A1F-479F-B8DA-CD191D4D7AFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinTrack.Domain", "src\FinTrack.Domain\FinTrack.Domain.csproj", "{11475B1B-2131-4248-B197-813185A3DDA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinTrack.Domain", "src\FinTrack.Domain\FinTrack.Domain.csproj", "{11475B1B-2131-4248-B197-813185A3DDA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fintrack.Infraestructure", "src\Fintrack.Infraestructure\Fintrack.Infraestructure.csproj", "{9E22D204-E054-4978-89FA-E90B4ED2BF2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fintrack.Infraestructure", "src\Fintrack.Infraestructure\Fintrack.Infraestructure.csproj", "{9E22D204-E054-4978-89FA-E90B4ED2BF2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinTrack.Infraestructure.Commons", "src\FinTrack.Infraestructure.Commons\FinTrack.Infraestructure.Commons.csproj", "{D1550EA0-12B0-4091-8CD9-14375B6D9691}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinTrack.Infraestructure.Commons", "src\FinTrack.Infraestructure.Commons\FinTrack.Infraestructure.Commons.csproj", "{D1550EA0-12B0-4091-8CD9-14375B6D9691}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinTrack.Infraestructure.Hateoas", "src\FinTrack.Infraestructure.Hateoas\FinTrack.Infraestructure.Hateoas.csproj", "{C3D2B890-6C43-459A-BB30-6B25F10E324B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinTrack.Infraestructure.Hateoas", "src\FinTrack.Infraestructure.Hateoas\FinTrack.Infraestructure.Hateoas.csproj", "{C3D2B890-6C43-459A-BB30-6B25F10E324B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{05C360FC-01B4-479C-845E-F96305DB53C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinTrack.Tests", "test\FinTrack.Tests\FinTrack.Tests.csproj", "{BFBECA22-3E6F-4FB9-B4F9-494FFB5C70C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinTrack.Tests", "test\FinTrack.Tests\FinTrack.Tests.csproj", "{BFBECA22-3E6F-4FB9-B4F9-494FFB5C70C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinTrack.Infraestructure.Data.EF", "src\FinTrack.Infraestructure.Data.EF\FinTrack.Infraestructure.Data.EF.csproj", "{EB8959E2-42D3-4560-B470-BAF4117D0B02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C5B75AD6-ABD4-4A3B-9B6C-F0343F29A3BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -58,6 +57,13 @@ Global
 		{BFBECA22-3E6F-4FB9-B4F9-494FFB5C70C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFBECA22-3E6F-4FB9-B4F9-494FFB5C70C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFBECA22-3E6F-4FB9-B4F9-494FFB5C70C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB8959E2-42D3-4560-B470-BAF4117D0B02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB8959E2-42D3-4560-B470-BAF4117D0B02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB8959E2-42D3-4560-B470-BAF4117D0B02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB8959E2-42D3-4560-B470-BAF4117D0B02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C5B75AD6-ABD4-4A3B-9B6C-F0343F29A3BC} = {ADA63B76-AE85-4107-BAC9-3AFBE1B1C3E2}
@@ -67,5 +73,9 @@ Global
 		{D1550EA0-12B0-4091-8CD9-14375B6D9691} = {ADA63B76-AE85-4107-BAC9-3AFBE1B1C3E2}
 		{C3D2B890-6C43-459A-BB30-6B25F10E324B} = {ADA63B76-AE85-4107-BAC9-3AFBE1B1C3E2}
 		{BFBECA22-3E6F-4FB9-B4F9-494FFB5C70C7} = {05C360FC-01B4-479C-845E-F96305DB53C2}
+		{EB8959E2-42D3-4560-B470-BAF4117D0B02} = {ADA63B76-AE85-4107-BAC9-3AFBE1B1C3E2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F1B708A5-53C9-4974-BA46-7B86D8B02645}
 	EndGlobalSection
 EndGlobal

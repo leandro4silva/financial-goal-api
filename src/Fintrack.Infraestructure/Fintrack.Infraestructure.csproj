@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="DataProviders\v1\" />
     <Folder Include="Filters\" />
   </ItemGroup>
 

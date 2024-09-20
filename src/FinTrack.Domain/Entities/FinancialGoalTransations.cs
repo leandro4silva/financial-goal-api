@@ -4,6 +4,8 @@ namespace FinTrack.Domain.Entities;
 
 public class FinancialGoalTransations
 {
+    public Guid Id { get; set; }
+
     public decimal Amount { get; set; }
 
     public DateTime CreatedAt { get; set; }
