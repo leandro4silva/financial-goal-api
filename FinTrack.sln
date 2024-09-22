@@ -21,7 +21,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{05C360FC-0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinTrack.Tests", "test\FinTrack.Tests\FinTrack.Tests.csproj", "{BFBECA22-3E6F-4FB9-B4F9-494FFB5C70C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinTrack.Infraestructure.Data.EF", "src\FinTrack.Infraestructure.Data.EF\FinTrack.Infraestructure.Data.EF.csproj", "{EB8959E2-42D3-4560-B470-BAF4117D0B02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinTrack.Infraestructure.Data.EF", "src\FinTrack.Infraestructure.Data.EF\FinTrack.Infraestructure.Data.EF.csproj", "{EB8959E2-42D3-4560-B470-BAF4117D0B02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{FCF1D200-BAB7-43AF-BD25-68ADE62A57EF}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -2,7 +2,7 @@
 
 namespace FinTrack.Domain.Entities;
 
-public class FinancialGoalTransations
+public class Transation
 {
     public Guid Id { get; set; }
 

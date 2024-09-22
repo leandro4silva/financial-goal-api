@@ -1,6 +1,6 @@
 ﻿namespace FinTrack.Domain.Enum;
 
-public enum FinancialGoalStatus
+public enum GoalStatus
 {
     InProgress = 1,
     Completed = 2,

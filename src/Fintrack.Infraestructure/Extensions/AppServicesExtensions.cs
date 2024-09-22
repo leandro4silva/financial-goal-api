@@ -1,5 +1,5 @@
-﻿using Fintrack.Infraestructure.DataProviders.v1.Repositories;
-using FinTrack.Application.Repositories;
+﻿using FinTrack.Domain.Repositories;
+using FinTrack.Infraestructure.Data.EF.Repositories;
 using Microsoft.Extensions.DependencyInjection;
 using System.Diagnostics.CodeAnalysis;
 

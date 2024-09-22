@@ -18,6 +18,6 @@ public static class AutoMapperExtensions
 
     public static void ConfigureMapper(IMapperConfigurationExpression config)
     {
-        config.AddProfile<FinancialGoalMapper>();
+        config.AddProfile<GoalMapper>();
     }
 }

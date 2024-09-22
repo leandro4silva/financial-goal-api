@@ -17,6 +17,6 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.3" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Fintrack.Infraestructure\Fintrack.Infraestructure.csproj" />
+    <ProjectReference Include="..\Fintrack.Infraestructure\Fintrack.Infraestructure.csproj" />
   </ItemGroup>
 </Project>

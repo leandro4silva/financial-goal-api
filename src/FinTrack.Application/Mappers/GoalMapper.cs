@@ -2,9 +2,9 @@
 
 namespace FinTrack.Application.Mappers;
 
-public class FinancialGoalMapper : Profile
+public class GoalMapper : Profile
 {
-    public FinancialGoalMapper()
+    public GoalMapper()
     {
        
     }

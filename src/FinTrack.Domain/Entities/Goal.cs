@@ -2,7 +2,7 @@
 
 namespace FinTrack.Domain.Entities;
 
-public class FinancialGoal
+public class Goal
 {
     public Guid Id { get; set; }
 
@@ -14,9 +14,9 @@ public class FinancialGoal
 
     public decimal IdealMonthlySaving { get; set; }
 
-    public FinancialGoalStatus Status { get; set; }
+    public GoalStatus Status { get; set; }
 
-    public FinancialGoalTransations? Transactions { get; set; }
+    public Transation? Transactions { get; set; }
 
     public DateTime CreatedAt { get; set; }
 

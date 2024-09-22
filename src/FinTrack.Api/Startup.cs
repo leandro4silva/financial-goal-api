@@ -1,4 +1,5 @@
 ﻿using Fintrack.Infraestructure.Extensions;
+using FinTrack.Api.Configurations;
 using FluentValidation.AspNetCore;
 using Microsoft.OpenApi.Models;
 
@@ -28,6 +29,7 @@ public class Startup
                 options.SuppressInferBindingSourcesForParameters = true
             );
 
+        services.AddAppConnections(builder.Configuration);
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen(setup => {
             setup.SwaggerDoc("v1", new OpenApiInfo()

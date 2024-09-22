@@ -4,5 +4,5 @@ namespace FinTrack.Domain.Repositories;
 
 public interface IFinancialGoalRepository
 {
-    Task Insert(PostCreateFinancialGoalRequest request, CancellationToken cancellationToken)
+    Task Insert(PostCreateFinancialGoalRequest request, CancellationToken cancellationToken);
 }
