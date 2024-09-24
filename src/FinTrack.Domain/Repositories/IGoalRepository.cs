@@ -2,7 +2,7 @@
 
 namespace FinTrack.Domain.Repositories;
 
-public interface IFinancialGoalRepository
+public interface IGoalRepository
 {
     Task Insert(PostCreateFinancialGoalRequest request, CancellationToken cancellationToken);
 }

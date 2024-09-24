@@ -1,5 +1,5 @@
 ﻿using FinTrack.Domain.Repositories;
-using FinTrack.Infraestructure.Data.EF.Repositories;
+using FinTrack.Infraestructure.Data.EF.Repositories.v1;
 using Microsoft.Extensions.DependencyInjection;
 using System.Diagnostics.CodeAnalysis;
 
@@ -12,7 +12,7 @@ public static class AppServicesExtensions
     {
         #region repositories
 
-        services.AddTransient<IFinancialGoalRepository, FinancialGoalRepository>();
+        services.AddTransient<IGoalRepository, GoalRepository>();
 
         #endregion
 
