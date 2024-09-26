@@ -1,5 +1,7 @@
-﻿using Fintrack.Infraestructure.Extensions;
+﻿using Fintrack.Infraestructure;
+using Fintrack.Infraestructure.Extensions;
 using FinTrack.Api.Configurations;
+using FinTrack.Application;
 using FluentValidation.AspNetCore;
 using Microsoft.OpenApi.Models;
 
@@ -22,6 +24,9 @@ public class Startup
 
         var appConfigs = builder.AddAppConfigs();
 
+        services.AddInfra(builder.Configuration);
+        services.AddApplication();
+
         services.AddControllers()
             .AddFluentValidation(x => x.AutomaticValidationEnabled = false)
             .AddCustomJsonOptions()
@@ -29,6 +34,7 @@ public class Startup
                 options.SuppressInferBindingSourcesForParameters = true
             );
 
+        
         services.AddAppConnections(builder.Configuration);
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen(setup => {

@@ -1,6 +1,4 @@
-﻿using FinTrack.Domain.Entities;
-using FinTrack.Domain.Enum;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace FinTrack.Application.Handlers.v1.Goal.CreateGoal;
 
