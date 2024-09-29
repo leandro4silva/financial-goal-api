@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace FinTrack.Infraestructure.Data.EF.Migrations
 {
-    public partial class CreateFinancialGoalTable : Migration
+    public partial class CreateGoalTable : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,7 +13,7 @@ namespace FinTrack.Infraestructure.Data.EF.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "FinancialGoalTransations",
+                name: "Transation",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
@@ -25,12 +25,12 @@ namespace FinTrack.Infraestructure.Data.EF.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_FinancialGoalTransations", x => x.Id);
+                    table.PrimaryKey("PK_Transation", x => x.Id);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "FinancialGoal",
+                name: "Goal",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "char(36)", nullable: false, collation: "ascii_general_ci"),
@@ -46,28 +46,28 @@ namespace FinTrack.Infraestructure.Data.EF.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_FinancialGoal", x => x.Id);
+                    table.PrimaryKey("PK_Goal", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_FinancialGoal_FinancialGoalTransations_TransactionsId",
+                        name: "FK_Goal_Transation_TransactionsId",
                         column: x => x.TransactionsId,
-                        principalTable: "FinancialGoalTransations",
+                        principalTable: "Transation",
                         principalColumn: "Id");
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateIndex(
-                name: "IX_FinancialGoal_TransactionsId",
-                table: "FinancialGoal",
+                name: "IX_Goal_TransactionsId",
+                table: "Goal",
                 column: "TransactionsId");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "FinancialGoal");
+                name: "Goal");
 
             migrationBuilder.DropTable(
-                name: "FinancialGoalTransations");
+                name: "Transation");
         }
     }
 }

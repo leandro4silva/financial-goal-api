@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using FinTrack.Application.Interfaces;
 using FinTrack.Application.Models.Request;
 using FinTrack.Domain.Repositories;
 using MediatR;
@@ -9,12 +10,14 @@ public class CreateGoalHandler : IRequestHandler<CreateGoalCommand, CreateGoalRe
 {
     private readonly IMapper _mapper;
     private readonly ILogger<CreateGoalHandler> _logger;
+    private readonly IUnitOfWork _unitOfWork;
     private readonly IGoalRepository _goalRepository;
 
-    public CreateGoalHandler(IMapper mapper, ILogger<CreateGoalHandler> logger, IGoalRepository goalRepository)
+    public CreateGoalHandler(IMapper mapper, ILogger<CreateGoalHandler> logger, IUnitOfWork unitOfWork, IGoalRepository goalRepository)
     {
         _mapper = mapper;
         _logger = logger;
+        _unitOfWork = unitOfWork;
         _goalRepository = goalRepository;
     }
 
@@ -27,6 +30,7 @@ public class CreateGoalHandler : IRequestHandler<CreateGoalCommand, CreateGoalRe
         var input = _mapper.Map<PostCreateFinancialGoalRequest>(request);
 
         await _goalRepository.Insert(input, cancellationToken);
+        await _unitOfWork.Commit(cancellationToken);
 
         var response = _mapper.Map<CreateGoalResult>(input);
 

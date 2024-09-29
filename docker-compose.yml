@@ -1,9 +1,9 @@
 version: '3.4'
 
 services:
-  fintrack_db:
-    container_name: fintrack
-    hostname: fintrack
+  fintrackdb:
+    container_name: fintrackdb
+    hostname: fintrackdb
     image: mysql
     ports:
       - 3306:3306
@@ -12,6 +12,6 @@ services:
 
 networks:
   default:
-    name: service_catalog
+    name: service_fintrack
 
     

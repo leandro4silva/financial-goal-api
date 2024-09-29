@@ -16,10 +16,10 @@ namespace FinTrack.Infraestructure.Data.EF.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "6.0.33")
+                .HasAnnotation("ProductVersion", "6.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("FinTrack.Domain.Entities.FinancialGoal", b =>
+            modelBuilder.Entity("FinTrack.Domain.Entities.Goal", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -55,10 +55,10 @@ namespace FinTrack.Infraestructure.Data.EF.Migrations
 
                     b.HasIndex("TransactionsId");
 
-                    b.ToTable("FinancialGoal");
+                    b.ToTable("Goal");
                 });
 
-            modelBuilder.Entity("FinTrack.Domain.Entities.FinancialGoalTransations", b =>
+            modelBuilder.Entity("FinTrack.Domain.Entities.Transation", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -81,12 +81,12 @@ namespace FinTrack.Infraestructure.Data.EF.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("FinancialGoalTransations");
+                    b.ToTable("Transation");
                 });
 
-            modelBuilder.Entity("FinTrack.Domain.Entities.FinancialGoal", b =>
+            modelBuilder.Entity("FinTrack.Domain.Entities.Goal", b =>
                 {
-                    b.HasOne("FinTrack.Domain.Entities.FinancialGoalTransations", "Transactions")
+                    b.HasOne("FinTrack.Domain.Entities.Transation", "Transactions")
                         .WithMany()
                         .HasForeignKey("TransactionsId");
 

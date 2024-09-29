@@ -33,7 +33,6 @@ public class Startup
             .ConfigureApiBehaviorOptions(options =>
                 options.SuppressInferBindingSourcesForParameters = true
             );
-
         
         services.AddAppConnections(builder.Configuration);
         services.AddEndpointsApiExplorer();

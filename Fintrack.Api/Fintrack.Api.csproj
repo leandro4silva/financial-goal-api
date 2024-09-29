@@ -1,21 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>a70c497a-b607-442b-aca9-5fe96f236e5e</UserSecretsId>
+    <UserSecretsId>642431b6-1d4c-4967-a05f-f8864e747518</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
     <DockerfileContext>..\..</DockerfileContext>
   </PropertyGroup>
-  
+
   <ItemGroup>
-    <PackageReference Include="Amazon.Lambda.AspNetCoreServer" Version="9.0.0" />
     <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
-  
+
   <ItemGroup>
-    <ProjectReference Include="..\FinTrack.Application\FinTrack.Application.csproj" />
-    <ProjectReference Include="..\Fintrack.Infraestructure\Fintrack.Infraestructure.csproj" />
+    <ProjectReference Include="..\src\Fintrack.Infraestructure\Fintrack.Infraestructure.csproj" />
   </ItemGroup>
+
 </Project>
