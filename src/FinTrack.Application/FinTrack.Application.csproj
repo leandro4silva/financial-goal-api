@@ -14,10 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\Response\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\FinTrack.Domain\FinTrack.Domain.csproj" />
   </ItemGroup>
 
